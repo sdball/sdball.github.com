@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stephen Ball - Rails Programmer</title>
+  <link href="stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascripts/bootstrap-scrollspy.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar" data-scrollspy="scrollspy">
+      <div class="fill">
+        <div class="container">
+          <a href="/" class="brand">sdball</a>
+          <ul class="nav">
+            <li><a href="#programming">Programming</a></li>
+            <li class="active"><a href="#sites">Sites</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+      <h1>Stephen Ball <small>front-end rails developer</small></h1>
+      <img alt="Avatar_120" class="avatar" src="images/avatar_120.png">
+      <p>I've been programming since I was old enough to learn that the Atari
+      computer plugged into our TV did more than play games. I've been hooked ever
+      since.</p>
+      <p>Online you'll either see me as <a href="http://xyzzyb.com">XyzzyB</a>
+      or sdball@gmail.com.</p>
+    </div>
+
+    <section id="programming">
+      <div class="page-header">
+        <h1>PROGRAMMING <small>tools and technologies I use to get my work done</small></h1>
+      </div>
+      <div class="row">
+        <div class="span16">
+          <h2><a href="">rails</a> <small>ruby web framework</small></h2>
+        </div>
+        <div class="span2">
+          <img alt="Rails" class="rails-logo" src="images/rails.png">
+        </div>
+        <div class="span14">
+          <p>I was first introduced to Ruby and Rails back in 2006 with the Pragmatic Programmer's book
+          <a href="http://pragprog.com/book/rails2/agile-web-development-with-rails">Agile Web Development with Rails (2nd edition)</a>.</p>
+          <p>I used it for hobby programming off and on until 2010, when I had the
+          opportunity to switch from Django and PHP to using Rails professionally.
+          Coming from the world of Django and its settings.py, the phrase
+          "convention over configuration" was especially refreshing.</p>
+          <p>One thing about Rails that I've become particularly enamored with is
+          the community. From Ryan Bates' RailsCasts to the Ruby Rogues to expansive
+          Ruby/Rails community on github, I feel like I always have someone to turn
+          to who genuinely wants to help.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="https://rvm.beginrescueend.com/">rvm</a> <small>ruby gem manager</small></h2>
+          <p>When I switched from to ruby from python fulltime I immediately started
+          searching for a replacement to virtualenv. Thank goodness I quickly found
+          rvm; it was exactly what I was hoping for. Rvm turned out to be an even
+          more capable tool since it managed language versions in addition to
+          project libraries.</p>
+          <p>
+            More details: <a href="http://xyzzyb.com/post/10339409394/rvm-virtualenv" class="btn">View Blog Post</a>
+          </p>
+        </div>
+        <div class="span5">
+          <h2><a href="http://gitx.frim.nl/">gitx</a> <small>git gui</small></h2>
+           <p>I use the git command line interface for everything except staging
+           commits; that's where GitX comes in. GitX allows me to easily see the
+           differences that I'm about to commit, stage files or sections of a file,
+           and amend the previous commit.</p>
+       </div>
+        <div class="span5">
+          <h2><a href="http://macromates.com/">TextMate</a> <small>text editor</small></h2>
+          <p>Ah TextMate. For years I was a diehard vim user; then I saw TextMate in
+          a <a href="http://blog.macromates.com/2006/ruby-screencast-unit-testing/">Unit Testing screencast by James Edward Grey</a> back in
+          September 2006. I was immediately hooked.</p>
+          <p>I dove through Grey's pragmatic programmer's book on TextMate and made
+          myself an expert. I can slice through text files, HTML, JQuery, and ruby
+          like butter. Even years later it's still the editor that looks gorgeous
+          and gets out of my way.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://heroku.com/">heroku</a> <small>rails application hosting</small></h2>
+          <p>Ah, Heroku. I was sold the first time I ran </p><pre>git push heroku master</pre>
+          I had just finished spending four hours trying to get a Rails app to
+          properly deploy to my Dreamhost server space. Ugh! I had the same app
+          deployed to Heroku in just under five
+          <em>minutes</em>.<p></p>
+        </div>
+        <div class="span5">
+          <h2><a href="https://github.com/defunkt/resque">resque</a> <small>background processing</small></h2>
+           <p>When my Rails apps need to do some background processing, I turn to
+           resque to keep my user experience snappy. Good examples are sending
+           emails, calling out to slow third party APIs, or doing intensive
+           processing.</p>
+           <p>Recently <a href="https://github.com/bkeepers/qu">Qu</a> has been released. It makes a
+           <a href="http://opensoul.org/blog/archives/2011/10/19/why-another-queuing-library/">persuasive argument</a>
+           for its use, but I haven't had the chance to give it a spin.</p>
+       </div>
+        <div class="span5">
+          <h2><a href="http://guides.rubyonrails.org/asset_pipeline.html">Rails 3.1 Asset Pipeline</a> <small>sane asset management</small></h2>
+          <p>The Rails 3.1 asset pipeline is the answer to a problem I didn't quite
+          realize I had: sanely partitioning third-party libraries, images, and
+          styling from those specific to my applications.</p>
+          <p>I can now drop resources like the
+          <a href="http://twitter.github.com/bootstrap/">twitter bootstrap css</a> I'm using on this site into
+          /vendor then pull them into my application by adding them to the
+          manifest files. Nice!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://ethanschoonover.com/solarized">solarized</a> <small>color scheme</small></h2>
+          <p>Solarized had me from the first time I visited their site and was
+          greeted by the gorgeously clear color scheme with the tag line "precision
+          colors for machines and people". Exactly what I was hoping for. Switching
+          felt like seeing my code for the first time.</p>
+        </div>
+        <div class="span5">
+          <h2><a href="http://twitter.github.com/bootstrap/">twitter bootstrap</a> <small>css</small></h2>
+          <p>Rather than spending a lot of time upfront coming up with a design for
+          a new application I can just drop in the bootstrap and get a perfectly
+          nice looking base to build from.</p>
+       </div>
+        <div class="span5">
+          <h2><a href="http://duckduckgo.com/">DuckDuckGo</a> <small>search engine</small></h2>
+          <p>My search engine of choice. Its zero-click results from stack overflow
+          and github work very nicely for doing programming research. Its bang!
+          searches paired with chrome give me hundreds of custom site searches for
+          free.</p>
+          <p><a href="http://www.gabrielweinberg.com/">Gabriel Weinberg</a>, its developer, is also surprisingly approachable and happy to discuss
+          new features or ideas for the engine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sites">
+      <div class="page-header">
+        <h1>SITES <small>pieces of the web that I've created</small></h1>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://xyzzyb.com">xyzzyb.com</a></h2>
+          <p>My blog and primary hobby domain.</p>
+          <p>Currently xyzzyb.com is a tumblr blog. It has at various points been:
+            </p><ul>
+              <li>static HTML</li>
+              <li>HTML generated from iBlog</li>
+              <li>a self-hosted Wordpress blog</li>
+              <li>an installation of <a href="http://walawiki.org/">WalaWiki</a> personally customized for blogging</li>
+              <li>a <a href="http://www.mephistoblog.com/download-mephisto/">Mephisto blog</a></li>
+              <li>a custom Django blog</li>
+              <li>a <a href="https://github.com/mojombo/jekyll">Jekyll blog</a></li>
+              <li>an <a href="http://www.enkiblog.com/">Enki blog</a></li>
+              <li>and (currently) a <a href="http://www.tumblr.com/">Tumblr blog</a></li>
+            </ul>
+          <p></p>
+        </div>
+        <div class="span5">
+          <h2><a href="http://movieterminals.herokuapp.com">Movie Terminals</a></h2>
+          <p>This is a fun site where I recreate famous movie terminals in
+          JavaScript. I've currently only implemented the movie terminal from the
+          movie <em>Alien</em>, but I have more planned. Now that I've gotten a
+          basic framework down I should be able to move fairly quickly.</p>
+        </div>
+        <div class="span5">
+          <h2><a href="http://duckduckgo.com/?q=xkcd">XKCD on DuckDuckGo</a></h2>
+          <p>After <a href="https://github.com/yegg">yegg</a>
+            announced the ability to contribute code to DuckDuckGo, I jumped at the opportunity. I saw that pulling in XKCD from its jsonp API was a potential idea: right up my alley! I coded up a quick JavaScript script to plug XKCD into DDG and I was actually the
+            <a href="https://github.com/duckduckgo/zeroclickinfo-spice/commit/fbee6811268f8452729b47dab7adeeeae7fd8d23">first to have code accepted</a>
+            to the <a href="https://github.com/duckduckgo/zeroclickinfo-spice">zeroclickinfo-spice</a> repository.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://code.xyzzyb.com/ipdatabase/">IPDatabase</a> <small>manage IP ranges and computers</small></h2>
+          <p>I created the IPDatabase for the server team in the UNC-Chapel Hill
+          University Library. It replaced an Access Database and added many new
+          features in the process.</p>
+          <ul>
+            <li>easily adds new ranges to the database in proper network/netmask notation</li>
+            <li><em>properly</em> calculates the min/max IPs for a given range</li>
+            <li>shows a <a href="http://code.xyzzyb.com/ipdatabase/report?fragmentationkey=category-devicetype&amp;report=fragmentation">"disk fragmentation" style view</a> of all managed IPs</li>
+            <li>full inventory tracking for each computer assigned to a static IP</li>
+          </ul>
+        </div>
+        <div class="span5">
+          <h2><a href="http://bandwidth.com">bandwidth.com</a></h2>
+          <p>I was Bandwidth.com's primary site admin for about two months in early
+          2010. Now I've just contributed CSS and JavaScript expertise to the
+          current design.</p>
+        </div>
+        <div class="span5">
+          <h2><a href="http://broadband.com">broadband.com</a></h2>
+          <p>Broadband.com is the website for the Business Internet department and
+          my primary responsibility at Bandwidth.com.</p>
+          <p>It's a Rails app that's currently just a brochure site, but for a time
+          ran a resque-backed pricing engine with some interesting JavaScript for
+          dynamic page creation.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://broadband.com/map">Broadband Map</a></h2>
+          <p>One of my first tasks at Bandwidth.com was to take a look at our over
+          400,000 points of telecom data and see if it was feasible to plot them on
+          a a Google Map. I went through various experiments such as locking the zoom, using marker manager, and
+          <a href="http://xyzzyb.com/post/10317033064/dynamically-loading-thousands-of-markers-in-google-maps">using a custom marker loader</a>
+          before finally hitting on using Google Fusion tables locked down to our
+          Google Premier key to house and serve the data.</p>
+          <p>The Broadband Map was <a href="http://gigaom.com/broadband/bandwidth-com-launches-a-better-broadband-map/">featured on GigaOM in March 2011</a>.</p>
+        </div>
+        <div class="span5">
+          <h2><a href="/">CoolIris on UNC Digital Collections</a></h2>
+          <p>For UNC one of my projects was to investigate plugging <a href="http://www.cooliris.com/developer/">CoolIris</a>
+          into our digital collections. Happily, I succeeded. The key was to add <a href="http://en.wikipedia.org/wiki/Media_RSS">media rss</a>
+          functionality to
+          <a href="http://www.oclc.org/contentdm/default.htm">ContentDM</a>;
+          no small feat since ContentDM is a complex third party application of
+          nested PHP. While I was at it, I added general RSS functionality to our
+          digital collections since that was a feature that we'd always been
+          interested in delivering.</p>
+          <p>But get it working I did, you can now see my handiwork by going to a
+          <a href="http://dc.lib.unc.edu/cdm4/browse.php?CISOROOT=/morton_highlights">digital collection</a>
+          and clicking "View in 3D" to open a modal window I designed to house their
+          flash photo browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Stephen Ball 2011</p>
+    </footer>
+  </div>
+</body>
+</html>
