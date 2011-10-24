@@ -279,6 +279,40 @@
           <!-- END DUCK DUCK GO KARMA WIDGET CODE //-->
         </div>
       </div>
+      <hr>
+      <div class="row">
+        <div class="span6">
+          <h2><a href="http://twitter.com/xyzzyb">@xyzzyb</a></h2>
+          <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script>
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 30000,
+            width: 'auto',
+            height: 300,
+            theme: {
+              shell: {
+                background: '#7abdff',
+                color: '#000000'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#000544',
+                links: '#0084ff'
+              }
+            },
+            features: {
+              scrollbar: true,
+              loop: false,
+              live: true,
+              behavior: 'all'
+            }
+          }).render().setUser('xyzzyb').start();
+          </script>
+        </div>
+      </div>
     </section>
 
     <footer>
