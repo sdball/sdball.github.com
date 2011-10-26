@@ -61,6 +61,7 @@
       }
 
     , activateButton: function (target) {
+        if (_gaq) _gaq.push(['_trackEvent', 'scrollspy', target]);
         this.activeTarget = target
 
         this.$topbar
